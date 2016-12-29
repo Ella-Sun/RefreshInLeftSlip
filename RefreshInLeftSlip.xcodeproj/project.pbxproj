@@ -15,6 +15,9 @@
 		44A601621E14E4D500FA8C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A601601E14E4D500FA8C19 /* LaunchScreen.storyboard */; };
 		44A6016D1E14E4D500FA8C19 /* RefreshInLeftSlipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A6016C1E14E4D500FA8C19 /* RefreshInLeftSlipTests.m */; };
 		44A601781E14E4D500FA8C19 /* RefreshInLeftSlipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A601771E14E4D500FA8C19 /* RefreshInLeftSlipUITests.m */; };
+		44A601871E14EEBB00FA8C19 /* RefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A601861E14EEBB00FA8C19 /* RefreshView.m */; };
+		44A6018A1E14FC4100FA8C19 /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A601891E14FC4100FA8C19 /* ItemCollectionViewCell.m */; };
+		44A6018D1E14FD6B00FA8C19 /* ShowInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A6018C1E14FD6B00FA8C19 /* ShowInfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		44A601731E14E4D500FA8C19 /* RefreshInLeftSlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefreshInLeftSlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A601771E14E4D500FA8C19 /* RefreshInLeftSlipUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshInLeftSlipUITests.m; sourceTree = "<group>"; };
 		44A601791E14E4D500FA8C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A601851E14EEBB00FA8C19 /* RefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshView.h; sourceTree = "<group>"; };
+		44A601861E14EEBB00FA8C19 /* RefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshView.m; sourceTree = "<group>"; };
+		44A601881E14FC4100FA8C19 /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
+		44A601891E14FC4100FA8C19 /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
+		44A6018B1E14FD6B00FA8C19 /* ShowInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowInfoView.h; sourceTree = "<group>"; };
+		44A6018C1E14FD6B00FA8C19 /* ShowInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowInfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44747CCA1E15323F00647050 /* RefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				44A6018B1E14FD6B00FA8C19 /* ShowInfoView.h */,
+				44A6018C1E14FD6B00FA8C19 /* ShowInfoView.m */,
+				44A601851E14EEBB00FA8C19 /* RefreshView.h */,
+				44A601861E14EEBB00FA8C19 /* RefreshView.m */,
+				44A601881E14FC4100FA8C19 /* ItemCollectionViewCell.h */,
+				44A601891E14FC4100FA8C19 /* ItemCollectionViewCell.m */,
+			);
+			name = RefreshView;
+			sourceTree = "<group>";
+		};
 		44A601461E14E4D500FA8C19 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +127,7 @@
 				44A601561E14E4D500FA8C19 /* AppDelegate.m */,
 				44A601581E14E4D500FA8C19 /* ViewController.h */,
 				44A601591E14E4D500FA8C19 /* ViewController.m */,
+				44747CCA1E15323F00647050 /* RefreshView */,
 				44A6015B1E14E4D500FA8C19 /* Main.storyboard */,
 				44A6015E1E14E4D500FA8C19 /* Assets.xcassets */,
 				44A601601E14E4D500FA8C19 /* LaunchScreen.storyboard */,
@@ -276,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A6018A1E14FC4100FA8C19 /* ItemCollectionViewCell.m in Sources */,
+				44A6018D1E14FD6B00FA8C19 /* ShowInfoView.m in Sources */,
 				44A6015A1E14E4D500FA8C19 /* ViewController.m in Sources */,
 				44A601571E14E4D500FA8C19 /* AppDelegate.m in Sources */,
+				44A601871E14EEBB00FA8C19 /* RefreshView.m in Sources */,
 				44A601541E14E4D500FA8C19 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +540,7 @@
 				44A6017E1E14E4D500FA8C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44A6017F1E14E4D500FA8C19 /* Build configuration list for PBXNativeTarget "RefreshInLeftSlipTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +549,7 @@
 				44A601811E14E4D500FA8C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44A601821E14E4D500FA8C19 /* Build configuration list for PBXNativeTarget "RefreshInLeftSlipUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +558,7 @@
 				44A601841E14E4D500FA8C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
